@@ -1,0 +1,11 @@
+-# =page_title 'New User Registration'
+
+%h1 New User Registration
+
+- form_for @user do |f|
+  = render :partial => 'form', :locals => { :f => f }
+
+  %p
+    = f.submit 'Register'
+    or
+    = link_to 'Cancel', :back

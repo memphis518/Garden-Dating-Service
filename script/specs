@@ -1,0 +1,2 @@
+#! /bin/bash
+spec -f specdoc -c spec/models && spec -f specdoc -c spec/integration
