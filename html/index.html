@@ -53,11 +53,11 @@
         <nav class="abs z1">
           <a name="nav"></a>
           <ul id="navigation" class="inline pad-side">
-            <li class="" slug="">Home</li>
-            <li class="" slug="">About Us</li>
-            <li class="" slug="">Host a Garden</li>
-            <li class="" slug="">Find a Garden</li>
-            <li class="" slug="">Login</li>
+            <li class="" slug=""><a href="#">Home</a></li>
+            <li class="" slug=""><a href="#">About Us</a></li>
+            <li class="" slug=""><a href="#">Host a Garden</a></li>
+            <li class="" slug=""><a href="#">Find a Garden</a></li>
+            <li class="" slug=""><a href="#">Login</a></li>
           </ul>
         </nav>
       </div>
@@ -72,10 +72,8 @@
       <section id="sidebar" class="rel w300">
           <span class="rel h1"><img src="img/spacer.gif" height="1" width="300" /></span>
           
-          <p>Sidebar</p>
-          
-			<div id="map">
-				<h3>Garden Mate</h3>
+         	<div id="map">
+				<h2>Active Gardens</h2>
 				<div id="map_canvas" style="width:100%; height:400px;"></div>
 			</div>
 
@@ -84,7 +82,7 @@
     <footer class="rel w100 wrap-up-70">
       <div id="footerContainer" class="rel container center">
             <div id="flogo" class="abs">
-                <h1>Garden Mate</h1>
+                <h1>Garden<span>Mate</span></h1>
             </div>
       </div>
     </footer>
@@ -100,27 +98,9 @@
 
 console.log('before');
 
- // GLOBALS
-TheKernal.debug.level = 1;
-
-///////////////////////
+// GLOBALS
+TheKernal.debug.level = 0;
 TheKernal('js/libs/jquery.tmpl.js'); 
-
-TheKernal(function(){ // instead of $(function(){
-    $(function(){
-    TheKernal.title('Kernal Started', TheKernal.length);
-      
-      /// do stuff with Javascript
-      console.log('jQuery Loaded', $());
-
-    TheKernal();
-}); });
-
-TheKernal.init();
-
-</script>
-
-<script type="text/javascript">
 
 function map_options() {
 	var locations = [
@@ -218,6 +198,7 @@ function map_options() {
     	});
 	}
 }
+
 </script>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;callback=map_options"></script>
   
