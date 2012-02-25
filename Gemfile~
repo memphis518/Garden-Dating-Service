@@ -8,7 +8,6 @@ gem 'mysql', '2.8.1'
 
 # Datamapper and extensions
 gem 'dm-mysql-adapter',     DM_VERSION
-gem 'dm-sqlite-adapter',     DM_VERSION
 gem 'dm-core',              DM_VERSION
 gem 'dm-aggregates',        DM_VERSION
 gem 'dm-migrations',        DM_VERSION
