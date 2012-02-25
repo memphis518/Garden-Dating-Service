@@ -24,7 +24,8 @@ gem 'dm-chunked_query'
 group :test do
   gem 'webrat'
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
- gem 'rspec-rails'
+  gem 'rspec-rails'
+  gem 'cucumber'
 end
 
 # Bundle the extra gems:
