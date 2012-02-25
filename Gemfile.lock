@@ -39,6 +39,8 @@ GEM
     arel (2.0.10)
     bcrypt-ruby (2.1.4)
     bson (1.6.0)
+    bson_ext (1.6.0)
+      bson (= 1.6.0)
     builder (2.1.2)
     cucumber (1.1.9)
       builder (>= 2.1.2)
@@ -167,6 +169,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bson_ext
   cucumber
   dm-accepts_nested_attributes!
   dm-aggregates (~> 1.1.0)
