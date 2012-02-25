@@ -6,21 +6,8 @@ DM_VERSION    = '~> 1.1.0'
 gem 'rails', RAILS_VERSION
 gem 'mongo'
 
-# Datamapper and extensions
-gem 'dm-mongo-adapter'
-gem 'dm-sqlite-adapter',    DM_VERSION
-gem 'dm-core',              DM_VERSION
-gem 'dm-aggregates',        DM_VERSION
-gem 'dm-migrations',        DM_VERSION
-gem 'dm-timestamps',        DM_VERSION
-gem 'dm-types',             DM_VERSION
-gem 'dm-validations',       DM_VERSION
-gem 'dm-serializer',        DM_VERSION
-gem 'dm-rails',             DM_VERSION
-gem 'dm-is-list',           DM_VERSION
-gem 'dm-accepts_nested_attributes', :git => 'https://github.com/snusnu/dm-accepts_nested_attributes.git'
-gem 'dm-chunked_query'
-gem 'bson_ext'
+gem "mongoid" 
+gem "bson_ext"
 
 group :test do
   gem 'webrat'

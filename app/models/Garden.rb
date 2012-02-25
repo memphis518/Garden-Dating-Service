@@ -1,22 +1,19 @@
 class Garden
-  include DataMapper::Resource
-
-  property :id,           Serial   
-  property :name,         String    
-  property :description,  Text      
-  property :address,      Text      
-  property :postalcode,   String
-  property :long_lat,     Array   
-  property :totalplots,   Integer   
-  property :availplots,   Integer   
-  property :contactinfo,  Text
-  property :plotsize,     Text
-  property :startdate,    DateTime
-  property :plotrental,   Text
-  property :workhours,    Text
-  property :workdays,     Text
-  property :wishlist,     Text
-  property :adminitiesforclasses, Text
-  property :created_date, DateTime
-   
+  include Mongoid::Document
+   field :name,          :type => String    
+   field :description,   :type => String      
+   field :address,       :type => String        
+   field :postalcode,    :type => String
+   field :location,      :type => Array   
+   field :totalplots,    :type => Integer   
+   field :availplots,    :type => Integer   
+   field :contactinfo,   :type => String
+   field :plotsize,      :type => String
+   field :startdate,     :type => DateTime
+   field :plotrental,    :type => String
+   field :workhours,     :type => String
+   field :workdays,      :type => String
+   field :wishlist,      :type => String
+   field :adminitiesforclasses,  :type => String
+   field :created_date,  :type => DateTime
 end
