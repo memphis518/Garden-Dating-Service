@@ -6,7 +6,7 @@
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
 
-gardens = Garden.create(
+Garden.create(
 	{ :name => 'Alamo Community Garden', 
 		:address => '2101 Alamo St.',
 		:postalcode => '78722',
@@ -15,6 +15,8 @@ gardens = Garden.create(
 		:availableplots => 1,
 		:location => [ -97.719688, 30.282124 ]
 		});
+
+Garden.create(
 	{ :name => 'Blackshear Community Garden ', 
 		:address => '2011 E. 9th St.',
 		:postalcode => '78702',
@@ -22,7 +24,9 @@ gardens = Garden.create(
 		:totalplots => 29,
 		:availableplots => 1,
 		:location => [ -97.719612, 30.263756 ]
-		},
+		});
+
+Garden.create(
 	{ :name => 'Clarksville Garden', 
 		:address => '1705 Waterston St.',
 		:postalcode => '78703',
@@ -30,7 +34,9 @@ gardens = Garden.create(
 		:totalplots => 29,
 		:availableplots => 1,
 		:location => [ -97.761421, 30.281971 ]
-		},
+		});
+
+Garden.create(
 	{ :name => 'Co-Lab Community Garden', 
 		:address => '613 Allen St.',
 		:postalcode => '78702',
@@ -38,6 +44,4 @@ gardens = Garden.create(
 		:totalplots => 29,
 		:availableplots => 1,
 		:location => [ -97.704605, 30.256397 ]
-		}	
-
-])
+		});
