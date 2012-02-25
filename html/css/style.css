@@ -1,0 +1,280 @@
+@charset "UTF-8";
+
+/* generic layout */
+
+th, th img, td, td img { vertical-align:top; } 
+
+/* always force a scrollbar in non-IE */
+html { overflow-y: scroll; }
+
+body { background: #e2e3e4; color: #333; padding: 0px; margin: 0px; }
+
+header, footer { width:100%; }
+
+/* layout engine */
+
+body { min-width: 1240px; }
+.container { margin-left: auto; margin-right: auto; width: 1240px;  margin-left:-625px; }
+
+.rel { position:relative; display:inline; float:left; }
+
+.col1{ width:100%; }
+.col2{ width:50%; }
+.col3{ width:33%; }
+.col4{ width:25%; }
+.col5{ width:12%; }
+
+.w900 { width:900px; }
+.w500 { width:500px; }
+.w300 { width:300px; }
+.w270 { width:270px; }
+.w200 { width:200px; }
+
+.h1 { height:1px; }
+
+.gutter { margin-left: 40px; }
+.gutterSmall { margin-left: 30px; }
+
+.row { margin-top:30px; margin-bottom:30px; }
+
+.float-left, .floatleft, .floatl { float:left; }
+.float-right, .floatright, .floatr { float:right; }
+
+/* x,y */
+.abs {position:absolute;}
+
+.inline { display:inline; }
+ul.inline li {display:inline; }
+
+.fixed {position:fixed;}
+
+.first { margin-left: 0; }
+.last { margin-right: 0; }
+
+.left {left:0;}
+.right {right:0;}
+.center {left:50%;}
+.top {top:0; }
+.bottom{bottom:0;}
+.middle{ top:50%; }
+
+/* z */
+.z1 {z-index:100;}
+.z2 {z-index:200;}
+.z3 {z-index:300;}
+.z4 {z-index:400;}
+.z5 {z-index:500;}
+.z6 {z-index:600;}
+.z99, .above { z-index:9999;}
+
+
+/* display */
+
+.block { display: block; }
+.hide { display:none; }
+.overflow { position:relative; overflow:hidden; }
+.clear { clear:both; }
+.temp {
+	position:absolute; display: none;
+	left: -9999px; top: -9999px;
+	overflow: auto;height:auto;width:auto;
+	padding: 0;margin: 0;border: 0;
+}
+.hover { cursor:pointer; }
+.link { cursor: pointer; }
+.scroll { overflow:scroll; }
+
+img {
+	padding: 0;
+	margin: 0;
+	border: none;
+	outline: none;
+	line-height: 0;
+	vertical-align: top;
+	-ms-interpolation-mode: bicubic;
+}
+
+.img {
+	width: 100%;
+	height: 100%;
+}
+
+
+/* skin */
+.wrap { margin:15px;}
+.wrap-down-20 { margin-bottom:20px; }
+.wrap-down-30 { margin-bottom:30px; }
+.wrap-down-40 { margin-bottom:40px; }
+.wrap-up-70 { margin-top:70px; }
+.pad { padding:15px;}
+.pad10 { padding:10px; }
+.pad25 { padding:25px }
+.pad-up { padding-top:30px;padding-bottom:30px; }
+.pad-down { padding-bottom:20px; }
+.pad-side { padding-left:15px;padding-right:15px; }
+
+.first{ margin-left:0; }
+.last{ margin-right:0; }
+
+.box, .outline { border:1px solid black; }
+
+
+/* features */
+
+.fixed {
+	position: fixed; overflow: hidden; display: none;
+	top: 50%; left: 50%; z-index: 1;
+	height: 40px; width: 40px;
+	margin-top: -20px; margin-left: -20px;
+}
+
+.overlay {
+	position: fixed;	display: none;
+	top: 0; left: 0; bottom: 0; right: 0; z-index: 1;
+}
+* html .overlay {	/* IE6 */
+	position: absolute; width: 100%;
+}
+
+.outer {
+	position: relative;
+	width: 100%; height: 100%;
+}
+
+.inner {
+	position: absolute;
+	top: 0;left: 0;
+	width: 1px; height: 1px;
+	padding: 0; margin: 0;
+	outline: none; overflow: visible;
+}
+
+.frame {
+	position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: transparent;
+}
+
+.frame2 {
+	position: relative;
+	width: 100%; height: 100%;
+	border: none; display: block;
+}
+
+.content {
+	height: auto;
+	width: auto;
+	padding: 0; margin: 0;
+}
+
+.odd {
+	background-color:#fff;
+}
+.even {
+	background-color:#eee;
+}
+
+
+/* Typography */
+
+/* #444 looks better than black: twitter.com/H_FJ/statuses/11800719859 */ 
+body, select, input, textarea { color:#444; }
+
+div,ul,blockquote,label,p,td,th { font-size: 13px; line-height: 20px; font-family: "Helvetica Roman", Helvetica, sans-serif  } 
+p { line-height: 150%; padding:0 0 1em 0; }
+
+
+/* www.aestheticallyloyal.com/public/optimize-legibility/ */ 
+h1,h2,h3,h4,h5,h6 { font-weight: bold; text-rendering: optimizeLegibility; }
+h1,h2,h3 { margin-top: 0px; margin-bottom: 10px;}
+h1 { font-size: 24px; line-height: 30px; } 
+h2 { font-size: 18px; line-height: 30px; }
+h3 { font-size: 15px; line-height: 20px; }  
+
+a { text-decoration: none; }
+a, a:active, a:visited { color:#607890; }
+a:hover { color:#036; text-decoration:underline; }
+
+a.disabled,
+a.disabled:hover,
+span.disabled,
+span.disabled a {
+	color:#ccc;
+}
+
+/*  j.mp/webkit-tap-highlight-color */
+a:link { -webkit-tap-highlight-color: #FF5E99; } 
+
+ul { margin-left:30px; }
+ol { margin-left:30px; list-style-type: decimal; }
+
+small { font-size:85%; }
+strong, th { font-weight: bold; }
+
+sub { vertical-align: sub; font-size: smaller; }
+sup { vertical-align: super; font-size: smaller; }
+
+pre { 
+  padding: 15px; 
+  
+  /* www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/ */
+  white-space: pre; /* CSS2 */
+  white-space: pre-wrap; /* CSS 2.1 */
+  white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word; /* IE */
+}
+
+::selection {
+	color: #fff; text-shadow: none; background-color: #FF5E99;
+}
+::-moz-selection {
+	color: #fff; text-shadow: none; background: #FF5E99;
+}
+
+.error {
+	color: #744;
+	font: normal 12px/20px Arial;
+	padding: 7px;
+	margin: 0;
+}
+
+.caption { font-size:10px; }
+
+.todo {
+	font-weight:bold;
+	color:#c00;
+	border:1px dashed #c00;
+	margin:10px;
+	padding:5px;
+	background-color:#ffcfce;
+}
+
+.align-right, .alignright, .alignr { text-align:right; }
+.align-left, .alignleft, .alignl { text-align:left; }
+.align-center, .aligncenter, .alignc { text-align:center; }
+
+.align-top, .aligntop, .alignt { vertical-align:top; }
+.align-middle, .alignmiddle, .alignm { vertical-align:middle;  }
+.align-bottom, .alignbottom, .alignb { vertical-align:bottom;  }
+
+
+
+/* Colors */
+
+.red { color:red; }
+.black { color:black; }
+.white { color:white; }
+.red-bg { background-color: red; }
+.black-bg { background-color: black; }
+.white-bg { background-color: white; }
+.grey-bg { background-color: grey; }
+
+.highlight { background: #FFFFCC; } 
+.lightblue { background: #CCD9E5; color: #3a3a3a;  }
+
+.pink { background: #EF5BA1; color: #FFF;  }
+.pink b, .pink strong { font-size: 15px; letter-spacing: -1px; } 
+
+.gray { color: #CCC; } 
+.gray a { color: #CCC; font-weight: bold; }
+
