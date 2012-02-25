@@ -20,6 +20,7 @@ gem 'dm-rails',             DM_VERSION
 gem 'dm-is-list',           DM_VERSION
 gem 'dm-accepts_nested_attributes', :git => 'https://github.com/snusnu/dm-accepts_nested_attributes.git'
 gem 'dm-chunked_query'
+gem 'bson_ext'
 
 group :test do
   gem 'webrat'
