@@ -1,0 +1,2 @@
+module GardenHelper
+end
