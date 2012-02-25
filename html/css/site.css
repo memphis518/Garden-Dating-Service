@@ -1,43 +1,60 @@
 @charset "UTF-8";
 
 /* Layout */
+body { background-color:#f2f3ec;}
 header, footer {margin:0; padding:0; }
-header { background-color:#f4c017; height:194px; margin-bottom:13px;}
-footer { background-color:#e2e3e4; height:149px; }
+header { background-color:#f2f3ec; height:194px; margin-bottom:13px;}
+footer { background-color:#f2f3ec; height:149px; }
 
-#page { background-color:#FFF; }
+#page { background-color:#e6e9ca; }
 #channel { height:473px; margin-bottom:0px;}
 
 header #headerContainer { padding-left:5px; }
-header #logo {}
+header #logo { left:10px; top: 45px;}
+header #subtitle { left:65px; top: 90px;}
 
+header nav {
+	height:78px; width:650px;
+	left:400px; top:40px;
+}
+
+footer #flogo { left:10px; top:90px;}
 footer #footerNav { right:244px; top:17px; }
 footer #footerContainer {}
 footer #copyright { right:244px; top:51px; }
 
-#main { padding-left:5px; width:1250px; margin-left:-625px; }
+#main { padding-left:15px; width:1250px; margin-left:-625px; }
 
-#content { width:900px; display: block; }
-#sidebar { margin-left:40px; margin-top:30px; }
+#content { padding-left:15px; width:800px; display: block; }
+#sidebar { margin-left:40px; }
+
+
 
 /* Titles & Type */
-h1,h2,h3,h4,h5,h6 { font-family: LobsterTwoRegular, "Helvetica Roman", Helvetica, sans-serif; text-transform:uppercase; }
+h1,h2,h3,h4,h5,h6 { font-family: LobsterTwoRegular, "Helvetica Roman", Helvetica, sans-serif; }
 
-.navText {
-	font-family: LobsterTwoRegular, "Helvetica Roman", Helvetica, sans-serif; text-transform:uppercase; 
-	font-size:17pt; color:white; letter-spacing:2px;
+#logo h1, #flogo  h1 { font-size: 69px; color:green; font-weight:normal; }
+#logo h1 span, #flogo h1 span { color:#98641d;}
+#subtitle { font-size: 22px; font-weight:bold;}
+
+#content h1 { font-size: 39px; color:green; font-weight:normal; }
+#content p { font-size: 19px; color:green; font-weight:normal; }
+
+.em { font-style:italic;}
+
+
+nav li {
+	font-family: "Helvetica Roman", Helvetica, sans-serif; text-transform:uppercase;
+	font-size:13pt; color:black; letter-spacing:1px; font-weight:bold;
 }
 
-nav {
-	height:58px; width:1300px;
-	left:0px; top:136px;
-	overflow:hidden;
-}
 nav ul {
 	height:58px;
 }
 nav li {
 	height:58px; display:block; float:left;
-	margin-right:13px;
-	font-size:1em;
+	margin-right:18px;
 }
+
+
+
