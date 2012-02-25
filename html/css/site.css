@@ -3,7 +3,7 @@
 /* Layout */
 body { background-color:#f2f3ec;}
 header, footer {margin:0; padding:0; }
-header { background-color:#f2f3ec; height:194px; margin-bottom:13px;}
+header { background-color:#f2f3ec; height:154px; margin-bottom:13px;}
 footer { background-color:#f2f3ec; height:149px; }
 
 #page { background-color:#e6e9ca; }
@@ -14,7 +14,7 @@ header #logo { left:10px; top: 45px;}
 header #subtitle { left:65px; top: 90px;}
 
 header nav {
-	height:78px; width:650px;
+	height:78px; width:850px;
 	left:400px; top:40px;
 }
 
@@ -31,14 +31,17 @@ footer #copyright { right:244px; top:51px; }
 
 
 /* Titles & Type */
-h1,h2,h3,h4,h5,h6 { font-family: LobsterTwoRegular, "Helvetica Roman", Helvetica, sans-serif; }
+h1,h2,h3,h4,h5,h6 { font-family: LobsterTwoRegular, "Helvetica Roman", Helvetica, sans-serif; font-weight:normal; }
 
-#logo h1, #flogo  h1 { font-size: 69px; color:green; font-weight:normal; }
+#logo h1, #flogo  h1 { font-size: 69px; color:green; font-family: LobsterTwoBold, "Helvetica Roman", Helvetica, sans-serif; }
 #logo h1 span, #flogo h1 span { color:#98641d;}
-#subtitle { font-size: 22px; font-weight:bold;}
+#subtitle, h2 { font-size: 22px; font-weight:bold; font-family: "Helvetica Roman", Helvetica, sans-serif; color:#444444;}
 
-#content h1 { font-size: 39px; color:green; font-weight:normal; }
-#content p { font-size: 19px; color:green; font-weight:normal; }
+h1 { font-size: 39px; color:green; font-weight:normal; }
+p { font-size: 19px; color:green; font-weight:normal; }
+
+a, a:visited, a:active { color:#444444; margin: 0; padding:2px 4px 0px 4px;}
+a:hover { color:white; background-color:#98641d; text-decoration:none;}
 
 .em { font-style:italic;}
 
