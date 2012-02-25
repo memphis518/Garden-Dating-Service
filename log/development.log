@@ -4,3 +4,6 @@
 [datamapper] Setting up :default repository: '/home/joe/Projects/DM-template/db/development.sqlite3' on sqlite3
 [datamapper] Setting up the "development" environment:
 [datamapper] Setting up :default repository: '/home/joe/Projects/Garden-Dating-Service/db/development.sqlite3' on sqlite3
+[datamapper] Setting up the "development" environment:
+[datamapper] Setting up :default repository: '/Users/swatters/Documents/Development/Garden-Dating-Service/db/development.sqlite3' on sqlite3
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104)

@@ -4,11 +4,11 @@ RAILS_VERSION = '~> 3.0.4'
 DM_VERSION    = '~> 1.1.0'
 
 gem 'rails', RAILS_VERSION
-gem 'mysql', '2.8.1'
+gem 'mongo'
 
 # Datamapper and extensions
-gem 'dm-mysql-adapter',     DM_VERSION
-gem 'dm-sqlite-adapter',     DM_VERSION
+gem 'dm-mongo-adapter'
+gem 'dm-sqlite-adapter',    DM_VERSION
 gem 'dm-core',              DM_VERSION
 gem 'dm-aggregates',        DM_VERSION
 gem 'dm-migrations',        DM_VERSION
