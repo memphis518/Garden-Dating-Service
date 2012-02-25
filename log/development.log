@@ -32,3 +32,95 @@ MONGODB admin['$cmd'].find({:ismaster=>1})
 MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
 MONGODB admin['$cmd'].find({:ismaster=>1})
 MONGODB admin['$cmd'].find({:ismaster=>1})
+MongoDB logging. Please note that logging negatively impacts performance and should be disabled for high-performance production apps.
+MONGODB admin['$cmd'].find({:ismaster=>1})
+MONGODB admin['$cmd'].find({:ismaster=>1})
+DEPRECATION WARNING: config.action_view.debug_rjs will be removed in 3.1, from 3.1 onwards you will need to install prototype-rails to continue to use RJS templates . (called from service at /home/joe/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111)
+
+
+Started GET "/public/mock" for 10.0.1.107 at 2012-02-25 17:40:32 -0600
+
+ActionController::RoutingError (No route matches "/public/mock"):
+  
+
+Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290@GardenDatingService/gems/actionpack-3.0.10/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started GET "/mock" for 10.0.1.107 at 2012-02-25 17:40:46 -0600
+
+ActionController::RoutingError (No route matches "/mock"):
+  
+
+Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290@GardenDatingService/gems/actionpack-3.0.10/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/css/lobster-two-fontfacekit/stylesheet.css" for 10.0.1.107 at 2012-02-25 17:41:28 -0600
+
+ActionController::RoutingError (No route matches "/css/lobster-two-fontfacekit/stylesheet.css"):
+  
+
+Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290@GardenDatingService/gems/actionpack-3.0.10/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/css/base.css" for 10.0.1.107 at 2012-02-25 17:41:33 -0600
+
+ActionController::RoutingError (No route matches "/css/base.css"):
+  
+
+Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290@GardenDatingService/gems/actionpack-3.0.10/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/css/style.css" for 10.0.1.107 at 2012-02-25 17:41:33 -0600
+
+ActionController::RoutingError (No route matches "/css/style.css"):
+  
+
+Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290@GardenDatingService/gems/actionpack-3.0.10/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.2ms)
+
+
+Started GET "/css/site.css" for 10.0.1.107 at 2012-02-25 17:41:33 -0600
+
+ActionController::RoutingError (No route matches "/css/site.css"):
+  
+
+Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290@GardenDatingService/gems/actionpack-3.0.10/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/js/libs/modernizr-2.5.3.min.js" for 10.0.1.107 at 2012-02-25 17:41:33 -0600
+
+ActionController::RoutingError (No route matches "/js/libs/modernizr-2.5.3.min.js"):
+  
+
+Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290@GardenDatingService/gems/actionpack-3.0.10/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/js/libs/TheKernal.js" for 10.0.1.107 at 2012-02-25 17:41:33 -0600
+
+ActionController::RoutingError (No route matches "/js/libs/TheKernal.js"):
+  
+
+Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290@GardenDatingService/gems/actionpack-3.0.10/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.7ms)
+
+
+Started GET "/img/spacer.gif" for 10.0.1.107 at 2012-02-25 17:41:39 -0600
+
+ActionController::RoutingError (No route matches "/img/spacer.gif"):
+  
+
+Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290@GardenDatingService/gems/actionpack-3.0.10/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/css/lobster-two-fontfacekit/stylesheet.css" for 10.0.1.107 at 2012-02-25 17:45:39 -0600
+
+ActionController::RoutingError (No route matches "/css/lobster-two-fontfacekit/stylesheet.css"):
+  
+
+Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290@GardenDatingService/gems/actionpack-3.0.10/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/mock/img/spacer.gif" for 10.0.1.107 at 2012-02-25 17:46:20 -0600
+
+ActionController::RoutingError (No route matches "/mock/img/spacer.gif"):
+  
+
+Rendered /home/joe/.rvm/gems/ruby-1.9.2-p290@GardenDatingService/gems/actionpack-3.0.10/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
