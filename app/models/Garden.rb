@@ -5,9 +5,8 @@ class Garden
   property :name,         String    
   property :description,  Text      
   property :address,      Text      
-  property :zipcode,      String
-  property :longitude,    Decimal   
-  property :latitude,     Decimal   
+  property :postalcode,   String
+  property :long_lat,     Array   
   property :totalplots,   Integer   
   property :availplots,   Integer   
   property :contactinfo,  Text
