@@ -36,6 +36,7 @@ h1,h2,h3,h4,h5,h6 { font-family: LobsterTwoRegular, "Helvetica Roman", Helvetica
 #logo h1, #flogo  h1 { font-size: 69px; color:green; font-family: LobsterTwoBold, "Helvetica Roman", Helvetica, sans-serif; }
 #logo h1 span, #flogo h1 span { color:#98641d;}
 #subtitle, h2 { font-size: 22px; font-weight:bold; font-family: "Helvetica Roman", Helvetica, sans-serif; color:#444444;}
+#searchInput { font-size: 25px; font-weight:bold; font-family: "Helvetica Roman", Helvetica, sans-serif; color:#444444;}
 
 h1 { font-size: 39px; color:green; font-weight:normal; }
 p { font-size: 19px; color:green; font-weight:normal; }
@@ -45,7 +46,7 @@ a:hover { color:white; background-color:#98641d; text-decoration:none;}
 
 .em { font-style:italic;}
 
-
+/* nav */
 nav li {
 	font-family: "Helvetica Roman", Helvetica, sans-serif; text-transform:uppercase;
 	font-size:13pt; color:black; letter-spacing:1px; font-weight:bold;
@@ -58,6 +59,13 @@ nav li {
 	height:58px; display:block; float:left;
 	margin-right:18px;
 }
+
+/* search */
+
+#searchBox { top:5px;}
+#searchInput {left:21px; top:123px; height:27px; width:222px; background:tranparent; border:none;}
+#searchButton { margin-top:6px; margin-left:2px; }
+
 
 
 
