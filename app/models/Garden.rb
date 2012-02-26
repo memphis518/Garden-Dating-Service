@@ -16,4 +16,6 @@ class Garden
    field :wishlist,      :type => String
    field :adminitiesforclasses,  :type => String
    field :created_date,  :type => DateTime
+
+   index [[ :location, Mongo::GEO2D ]]
 end
