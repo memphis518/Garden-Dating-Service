@@ -16,6 +16,7 @@ group :test do
   gem 'rspec-rails'
   gem 'cucumber'
   gem 'cucumber-rails'
+  gem 'geocoder'
 end
 
 # Bundle the extra gems:

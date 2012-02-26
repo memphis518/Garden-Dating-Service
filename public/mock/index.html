@@ -31,7 +31,6 @@
        Modernizr enables HTML5 elements & feature detects for optimal performance.
        Create your own custom Modernizr build: www.modernizr.com/download/ -->
   <script src="js/libs/modernizr-2.5.3.min.js"></script>
-  <script src="js/libs/TheKernal.js"></script>
 
 </head>
 <body>
@@ -68,14 +67,26 @@
           <span class="rel h1"><img src="img/spacer.gif" height="1" width="900" /></span>
           <h1>Find a Garden</h1>
           <p class="em">Community Gardens are privately owned ...</p>
+          <form id="searchForm" name="searchForm">
+              <div id="searchBox">
+	          	<img src="img/enter-your-location-box.png" class="inline" />
+              	<img id="searchButton" src="img/submit-button-up.png" class="inline hover" />
+              	<input type="text" id="searchInput" class="abs" />
+                <input type="submit" class="hidden" />
+          	  </div>
+          </form>
+
+          <div id="map" style="margin-top:30px;">
+				<div id="map_canvas" style="width:100%; height:400px;"></div>
+		  </div>
+
       </section> 
       <section id="sidebar" class="rel w300">
           <span class="rel h1"><img src="img/spacer.gif" height="1" width="300" /></span>
           
-         	<div id="map">
-				<h2>Active Gardens</h2>
-				<div id="map_canvas" style="width:100%; height:400px;"></div>
-			</div>
+         	<div id="sidebarFB">
+         		<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2FGardenMateAustin&amp;width=290&amp;height=590&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=true&amp;header=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:290px; height:590px;" allowTransparency="true"></iframe>
+         	</div> 
 
       </section>
     </div>
@@ -83,6 +94,9 @@
       <div id="footerContainer" class="rel container center">
             <div id="flogo" class="abs">
                 <h1>Garden<span>Mate</span></h1>
+            </div>
+            <div id="footerFB" class="abs">
+            	
             </div>
       </div>
     </footer>
@@ -96,11 +110,30 @@
 
   <script type="text/javascript">
 
-console.log('before');
+$(function(){
+	// jquery
 
-// GLOBALS
-TheKernal.debug.level = 0;
-TheKernal('js/libs/jquery.tmpl.js'); 
+	$('#searchButton').mouseover(function(e){
+		$('#searchButton').attr('src', 'img/submit-button-down.png').css({marginTop:4,marginLeft:0,border:'2px solid green'});
+	});
+	$('#searchButton').mouseout(function(e){
+		$('#searchButton').attr('src', 'img/submit-button-up.png').css({marginTop:6,marginLeft:2,border:'none'});
+	});
+	$('#searchButton').click(function(){
+		$('#searchForm').submit();
+	});
+	$('#searchForm').submit(function(e){
+		e.preventDefault();
+
+		var searchPhrase = $('#searchInput').val();
+		window.location = 'results.html?q='+ escape(searchPhrase);
+
+		$('#searchInput').val('');
+	});
+
+
+});
+
 
 function map_options() {
 	var locations = [
