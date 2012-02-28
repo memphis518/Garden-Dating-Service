@@ -6,3 +6,4 @@ db/_tmp
 db/garden*
 db/journal/*
 *.swp
+.DS_Store
