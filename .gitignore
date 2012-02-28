@@ -1,3 +1,8 @@
 tmp/*
 log/*
 *~
+.bundle
+db/_tmp
+db/garden*
+db/journal/*
+*.swp

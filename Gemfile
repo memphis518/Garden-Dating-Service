@@ -8,6 +8,7 @@ gem 'mongo'
 
 gem "mongoid" 
 gem "bson_ext"
+gem 'geocoder'
 
 group :test do
   gem 'webrat'
@@ -16,7 +17,6 @@ group :test do
   gem 'rspec-rails'
   gem 'cucumber'
   gem 'cucumber-rails'
-  gem 'geocoder'
 end
 
 # Bundle the extra gems:

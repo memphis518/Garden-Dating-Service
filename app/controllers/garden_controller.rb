@@ -10,9 +10,7 @@ class GardenController < ApplicationController
   end
 
   def index
-       distance = 10
-       location = [params[:long].to_f, params[:lat].to_f] 
-       @gardens = Garden.near(:location => location )
+       @gardens = Garden.near(params[:location], 20)
        respond_to do |format|
          format.html # index.html.erb
          format.xml  { render :xml => @gardens }

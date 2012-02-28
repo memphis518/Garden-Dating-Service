@@ -4,7 +4,7 @@ class Garden
    field :description,   :type => String      
    field :address,       :type => String        
    field :postalcode,    :type => String
-   field :location,      :type => Array   
+   field :coordinates,   :type => Array   
    field :totalplots,    :type => Integer   
    field :availplots,    :type => Integer   
    field :contactinfo,   :type => String
@@ -17,5 +17,13 @@ class Garden
    field :adminitiesforclasses,  :type => String
    field :created_date,  :type => DateTime
 
-   index [[ :location, Mongo::GEO2D ]]
+   index [[ :coordinates, Mongo::GEO2D ]]
+ 
+   def fulladdress
+        self.address + " " + self.postalcode
+   end
+ 
+   include Geocoder::Model::Mongoid
+    geocoded_by :fulladdress
+    after_validation :geocode
 end
