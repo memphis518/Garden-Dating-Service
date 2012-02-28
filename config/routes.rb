@@ -1,4 +1,4 @@
-DMTemplate::Application.routes.draw do
+GardenDatingService::Application.routes.draw do
 
   resources :garden
 
