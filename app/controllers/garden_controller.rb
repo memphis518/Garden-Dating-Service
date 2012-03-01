@@ -9,7 +9,7 @@ class GardenController < ApplicationController
         @garden.update(params[:post]);
   end
 
-  def index
+  def search
        @gardens = Garden.near(params[:location], 20)
        respond_to do |format|
          format.html # index.html.erb
