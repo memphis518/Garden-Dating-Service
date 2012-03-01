@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+/* Layout */
+body { background-color:#f2f3ec;}
+header, footer {margin:0; padding:0; }
+header { background-color:#f2f3ec; height:154px; margin-bottom:13px;}
+footer { background-color:#f2f3ec; height:149px; }
+
+#page { background-color:#e6e9ca; }
+#channel { height:473px; margin-bottom:0px;}
+
+header #headerContainer { padding-left:5px; }
+header #logo { left:10px; top: 45px;}
+header #subtitle { left:65px; top: 90px;}
+
+header nav {
+	height:78px; width:850px;
+	left:400px; top:40px;
+}
+
+footer #flogo { left:10px; top:90px;}
+footer #footerNav { right:244px; top:17px; }
+footer #footerContainer {}
+footer #copyright { right:244px; top:51px; }
+
+#main { padding-left:15px; width:1250px; margin-left:-625px; }
+
+#content { padding-left:15px; width:800px; display: block; }
+#sidebar { margin-left:40px; }
+
+
+
+/* Titles & Type */
+h1,h2,h3,h4,h5,h6 { font-family: LobsterTwoRegular, "Helvetica Roman", Helvetica, sans-serif; font-weight:normal; }
+
+#logo h1, #flogo  h1 { font-size: 69px; color:green; font-family: LobsterTwoBold, "Helvetica Roman", Helvetica, sans-serif; }
+#logo h1 span, #flogo h1 span { color:#98641d;}
+#subtitle, h2 { font-size: 22px; font-weight:bold; font-family: "Helvetica Roman", Helvetica, sans-serif; color:#444444;}
+#searchInput { font-size: 25px; font-weight:bold; font-family: "Helvetica Roman", Helvetica, sans-serif; color:#444444;}
+
+h1 { font-size: 39px; color:green; font-weight:normal; }
+p { font-size: 19px; color:green; font-weight:normal; }
+
+a, a:visited, a:active { color:#444444; margin: 0; padding:2px 4px 0px 4px;}
+a:hover { color:white; background-color:#98641d; text-decoration:none;}
+
+.em { font-style:italic;}
+
+/* nav */
+nav li {
+	font-family: "Helvetica Roman", Helvetica, sans-serif; text-transform:uppercase;
+	font-size:13pt; color:black; letter-spacing:1px; font-weight:bold;
+}
+
+nav ul {
+	height:58px;
+}
+nav li {
+	height:58px; display:block; float:left;
+	margin-right:18px;
+}
+
+/* search */
+
+#searchBox { top:5px;}
+#searchInput {left:21px; top:123px; height:27px; width:222px; background:tranparent; border:none;}
+#searchButton { margin-top:6px; margin-left:2px; }
+
+
+
+
