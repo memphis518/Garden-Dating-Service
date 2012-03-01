@@ -8,8 +8,8 @@ gem 'mongo'
 
 gem "mongoid" 
 gem "bson_ext"
-gem 'geocoder'
-
+gem "geocoder"
+gem "jquery-rails"
 group :test do
   gem 'webrat'
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
