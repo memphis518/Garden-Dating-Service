@@ -67,11 +67,11 @@
           <span class="rel h1"><img src="img/spacer.gif" height="1" width="900" /></span>
           <h1>Find a Garden</h1>
           <p class="em">Community Gardens are privately owned ...</p>
-          <form id="searchForm" name="searchForm">
+          <form id="searchForm" name="searchForm" action="/garden/search">
               <div id="searchBox">
 	          	<img src="img/enter-your-location-box.png" class="inline" />
               	<img id="searchButton" src="img/submit-button-up.png" class="inline hover" />
-              	<input type="text" id="searchInput" class="abs" />
+              	<input type="text" id="searchInput" name='location'  class="abs" />
                 <input type="submit" class="hidden" />
           	  </div>
           </form>
@@ -121,14 +121,6 @@ $(function(){
 	});
 	$('#searchButton').click(function(){
 		$('#searchForm').submit();
-	});
-	$('#searchForm').submit(function(e){
-		e.preventDefault();
-
-		var searchPhrase = $('#searchInput').val();
-		window.location = 'results.html?q='+ escape(searchPhrase);
-
-		$('#searchInput').val('');
 	});
 
 
