@@ -8,3 +8,4 @@ db/journal/*
 *.swp
 .DS_Store
 Gemfile.lock
+.rvmrc
