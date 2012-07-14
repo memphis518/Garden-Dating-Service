@@ -20,6 +20,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'cucumber'
   gem 'factory_girl_rails'
+  gem 'heroku'
 end
 
 group :test do
