@@ -19,6 +19,9 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'cucumber'
   gem 'factory_girl_rails'
+end
+
+group :test do
   gem 'cucumber-rails'
 end
 
