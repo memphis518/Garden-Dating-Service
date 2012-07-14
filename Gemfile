@@ -4,9 +4,8 @@ RAILS_VERSION = '~> 3.0.4'
 DM_VERSION    = '~> 1.1.0'
 
 gem 'rails', RAILS_VERSION
-gem 'mongo'
+gem 'mongo_mapper'
 
-gem "mongoid" 
 gem "bson_ext"
 gem "geocoder"
 gem "devise"
@@ -19,6 +18,9 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'cucumber'
   gem 'factory_girl_rails'
+end
+
+group :test do
   gem 'cucumber-rails'
 end
 

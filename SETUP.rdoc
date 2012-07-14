@@ -1,0 +1,23 @@
+= Process for Setting Up the "Garden Dating Service" Application
+
+* You must have the following required packages installed before you start:
+
+  * Ruby (1.9.2 or later)
+  * Mongo DB (2.0.6 or later)
+
+* Retrieve the "Garden Dating Service" package.
+
+Info at: https://github.com/memphis518/Garden-Dating-Service
+
+* Move into the base directory and run:
+
+    $ bundle install
+    
+This will retrieve and install all of the necessary Ruby gems. Note that some
+of the gems will need to be compiled, and may fail if required libraries are
+missing. In this case, review the logs, add the missing dependency, and run
+"bundle install" again.
+
+* Start the application in development mode:
+
+    $ rails server
