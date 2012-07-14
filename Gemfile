@@ -8,7 +8,7 @@ gem 'mongo'
 
 gem "mongoid"
 gem "bson", "1.6.2"
-gem "bson_ext", "1.6.2"
+gem "bson_ext", "1.6.1"
 gem "geocoder"
 gem "devise"
 gem "jquery-rails"

@@ -1,7 +1,7 @@
 development:
   host: localhost
   database: garden_dating_service_development
-
+  autocreate_indexes: true
 test:
   host: localhost
   database: garden_dating_service_test
