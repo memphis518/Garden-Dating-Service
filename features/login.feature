@@ -13,6 +13,6 @@ When I enter a invalid username and password
 Then I see an error page
 	
 	
-Given: I have tried to express interest but am not logged in so I am on login page
+Given I have tried to express interest but am not logged in so I am on login page
 When I enter a valid username and password
 Then I am taken back to the express interest page
