@@ -4,4 +4,3 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-DMTemplate::Application.load_tasks

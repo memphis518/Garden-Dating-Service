@@ -6,8 +6,9 @@ DM_VERSION    = '~> 1.1.0'
 gem 'rails', RAILS_VERSION
 gem 'mongo'
 
-gem "mongoid" 
-gem "bson_ext"
+gem "mongoid"
+gem "bson", "1.6.2"
+gem "bson_ext", "1.6.2"
 gem "geocoder"
 gem "devise"
 gem "jquery-rails"
