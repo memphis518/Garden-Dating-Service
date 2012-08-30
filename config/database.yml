@@ -20,3 +20,6 @@ development:
 #  database: db/production.sqlite3
 #  pool: 5
 #  timeout: 5000
+
+cucumber:
+  <<: *test

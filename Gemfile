@@ -21,6 +21,7 @@ group :development, :test do
   gem 'cucumber'
   gem 'factory_girl_rails'
   gem 'heroku'
+  gem 'database_cleaner'
 end
 
 group :test do
@@ -39,3 +40,5 @@ end
 # group :development, :test do
 #   gem 'webrat'
 # end
+
+
