@@ -4,4 +4,3 @@ Given /^there is a garden with an open plot$/ do
 	# add an open plot to garden	
 	@garden.availplots = 1
 end
-

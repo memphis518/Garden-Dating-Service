@@ -4,4 +4,12 @@ FactoryGirl.define do
     address '123 Fake St'
     postalcode '12345'  
   end
+  
+  factory :user do
+  end
+
+
+  factory :invitation do
+  end
+  
 end
