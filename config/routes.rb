@@ -1,10 +1,15 @@
 GardenDatingService::Application.routes.draw do
 
-  resources :garden do
+  resources :gardens do
     collection do
         get 'search'
     end
   end
+
+
+  resources :invitations do
+  end
+
 
   match 'index' => 'home#index'
 
